@@ -1,3 +1,6 @@
+# Data Dictionary - Getting and Cleaning Data Course Project  
+##Background of the output data
+
 The data in the file course_project_output.txt pertains to measurements from experiments carried out on 30 volunteers performing 6 different activities. The raw data from the results of the experiment is available as a zip file at the URL https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. The zip file has two data sets for training and testing. 
 
 Following data elements from the training and test data sets wee utilized to produce final output:
@@ -5,9 +8,9 @@ Following data elements from the training and test data sets wee utilized to pro
 	- Activity Labels information that links the labels to an activity name
 	- ID of the subject who participated in the experiment.
 
-Transformations Performed on raw(original) data :
+##Transformations Performed on raw(original) data :
 
-	Following transformations are performed on the raw data to arrive at the final output (tidy dataset) :
+Following transformations are performed on the raw data to arrive at the final output (tidy dataset) :
 	- Join the feature vector (X_train/X_test.txt), Activity vector(Y_train/Y_test.txt) and subject_ ID vector(subject_train/subject_test.txt).
 	- Merge training and test datasets.
 	- Extract columns representing mean and standard deviation fir each measurement.
