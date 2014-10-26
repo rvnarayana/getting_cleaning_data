@@ -10,17 +10,17 @@ run_analysis <- function() {
   ######################################################################
   
   # Read Test data from files
-  x_test <- read.table("test/X_test.txt", stringsAsFactors=FALSE)
-  y_test <- read.table("test/Y_test.txt", stringsAsFactors=FALSE) 
-  subject_test <- read.table("test/subject_test.txt", stringsAsFactors=FALSE)
+  x_test <- read.table("UCI HAR Dataset/test/X_test.txt", stringsAsFactors=FALSE)
+  y_test <- read.table("UCI HAR Dataset/test/Y_test.txt", stringsAsFactors=FALSE) 
+  subject_test <- read.table("UCI HAR Dataset/test/subject_test.txt", stringsAsFactors=FALSE)
 
   # create Test data set
   test_data <- cbind(x_test, subject_test, y_test)
   
   # Read Training data from files
-  x_train <- read.table("train/X_train.txt", stringsAsFactors=FALSE)
-  y_train <- read.table("train/Y_train.txt", stringsAsFactors=FALSE) 
-  subject_train <- read.table("train/subject_train.txt", stringsAsFactors=FALSE)
+  x_train <- read.table("UCI HAR Dataset/train/X_train.txt", stringsAsFactors=FALSE)
+  y_train <- read.table("UCI HAR Dataset/train/Y_train.txt", stringsAsFactors=FALSE) 
+  subject_train <- read.table("UCI HAR Dataset/train/subject_train.txt", stringsAsFactors=FALSE)
   
   # create train data set
   train_data <- cbind(x_train, subject_train, y_train)
@@ -38,7 +38,7 @@ run_analysis <- function() {
   ############################################################################
 
   #set column headings to feature names from the features.txt file
-  features <- read.table("features.txt")
+  features <- read.table("UCI HAR Dataset/features.txt")
   names(merged_data) <- features[,2]
   
   # setting column names for activity_id and subject_id 
@@ -60,7 +60,7 @@ run_analysis <- function() {
   ########################################################################
  
   # Read Activity Labels file so we can replace the activity_id by the respective labels
-  activity_labels <- read.table("activity_labels.txt")
+  activity_labels <- read.table("UCI HAR Dataset/activity_labels.txt")
   colnames(activity_labels) <- c("activity_id", "activity_name")
   
   # setting column names for activity_id and subject_id in mean_std_data set 
@@ -120,13 +120,10 @@ run_analysis <- function() {
   tidy_dataset$activity_name <- NULL
   colnames(tidy_dataset)[1:2] <- c("activityname", "subjectid")
   colnames(tidy_dataset)[3:ncol(tidy_dataset)] <- paste("average", colnames(tidy_dataset)[3:ncol(tidy_dataset)], sep="")
- 
-  print(tidy_dataset[1:10,1:10])
 
   #########################################
   # write the final data set to a text file
   #########################################
   write.table(tidy_dataset, file = "course_project_output.txt",row.names=FALSE, na="")
-  return(names(tidy_dataset))
  
 }
