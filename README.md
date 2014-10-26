@@ -1,41 +1,26 @@
-##############################################################
-# This is file explains the steps used in the course project for 
-# Getting and Cleaning Data Course Project. 
-##############################################################
+Per the Course Project requirements the run_analysis.R file in this repository does the following :   
+* Reads test and train data sets from input files  
+* Extracts data related to the mean and standard deviation for each measurement  
+* Replaces activity labels n the data set with descriptive activity names   
+* Appropriately labels the data set with descriptive variable names  
+* Creates a tidy data set with the average of each variable for each activity and each subject   
+* writes the final output to the file course_project_output.txt
 
-Per the Course Project requirements the run_analysis.R file in this repo does the following :
-
-- Reads test and train data sets from files 
-- Extracts only the measurements on the mean and standard deviation for each measurement
-- Assigns descriptive activity names to name the activities in the data set
-- Appropriately labels the data set with descriptive variable names. 
-- Creates a tidy data set with the average of each variable for each activity and each subject.
-- writes the final outoput to the file project_output.txt
-
-###########################################################################
-##
-## Below is a detailed description of how each of the steps was implemented
-##
-########################################################################### 
+## Description of how run_analysis.R works  
 
 
-Step 1 - Read "Test" and "Train" data sets and join the two data sets
----------------------------------------------------------------------
+**Step 1 - Read "Test" and "Train" data sets and join the two data sets**
 
-This involves following for each data set :
+This involves following for each data set (test and training) :    
 
-	- Read X, Y, and subject data into separate data frames
-        - Join these three data frames using cbind to form a coplete data set 
-
-	Finally, Use rbind to join train and test data sets to create a complete data set
-	called merged_data
+* Read X, Y, and subject data into separate data frames   
+* Join these three data frames using cbind to form a coplete data set    
+* Use rbind to join train and test data sets to create a complete data set called _merged_data_   
   
  
-Step 2 - Extract Columns representing Mean and standard deviation for each of the measurements
--------------------------------------------------------------------------------------
+**Step 2 - Extract columns representing mean and standard deviation for each of the measurements**    
 
-	- Extract appropriate columns based on column indices and create a new data frame 
-	  called mean_std_data
+* Extract columns related mean, standard deviation, activity ID and subject ID measurements using grep command. Name the new data frame _mean_std_data_   
 
 
 Step 3 - Replace Activity Type vlaues with Activity labels
