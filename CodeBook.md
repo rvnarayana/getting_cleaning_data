@@ -4,30 +4,30 @@ The output data in the file course_project_output.txt pertains to measurements f
 
 Following data elements from the training and test data sets wee utilized to produce final output:  
 * 561 feature vector indicating time and ferquency domain measurements from the experiement.
-* Activity Labels information that links the labels to an activity name
+* Activity vector that associates an activity lable with each row of the feature vector. 
 * ID of the subject who participated in the experiment.
 
 ##Transformations performed on raw(original) data :
 
 Following transformations are performed on the raw data to arrive at the final output (tidy dataset) :   
-	* Join the feature vector (X_train/X_test.txt), Activity vector(Y_train/Y_test.txt) and subject_ ID vector(subject_train/subject_test.txt).
-	* Merge training and test datasets.
-	* Extract columns representing mean and standard deviation fir each measurement.
-	* Replace activity labels with respective activity names.
-	* Label the data set with descriptive column names
-	* Create tidy dataset with average of each variable for each activity and each subject.
-	* Write the final outout into a file.
+* Join the feature vector (X_train/X_test.txt), Activity vector(Y_train/Y_test.txt) and subject_ ID vector(subject_train/subject_test.txt).
+* Merge training and test datasets.
+* Extract columns representing mean and standard deviation fir each measurement.
+* Replace activity labels with respective activity names.
+* Label the data set with descriptive column names
+* Create tidy dataset with average of each variable for each activity and each subject.
+* Write the final outout into a file.
 
 ##Description of output variables 
 
-activityname
+**activityname**  
 	Activity Name. Can have following values :
-	- LAYING
-	- SITTING
-	- STANDING
-	- WALKING
-	- WALKING_DOWNSTAIRS
-	- WALKING_UPSTAIRS
+	* LAYING
+	* SITTING
+	* STANDING
+	* WALKING
+	* WALKING_DOWNSTAIRS
+	* WALKING_UPSTAIRS
 
 subjectid
 	Indicates the ID assigned to each person participating in the experiment.Value ranges between 1 to 30.
