@@ -1,6 +1,6 @@
 # Data Dictionary - Course Project  
 ##Overview of the output data
-The output data in the file course_project_output.txt pertains to measurements from an experiment carried out on 30 volunteers performing 6 different activities. The raw data from the results of the experiment is available as a zip file at the URL https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. The zip file has two data sets for training and testing respectively. 
+The output data in the file course_project_output.txt pertains to measurements from an experiment carried out on 30 volunteers performing 6 different activities(LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS). The raw data from the results of the experiment is available as a zip file at the URL https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. The zip file has two data sets for training and testing respectively. 
 
 Following data elements from the training and test data sets were utilized to produce final output:  
 * 561 feature vector indicating time and ferquency domain measurements from the experiement.
@@ -9,7 +9,7 @@ Following data elements from the training and test data sets were utilized to pr
 * Activity label to activity name mapping
 * Variable names for feature vector
 
-##Transformations performed on raw(original) data :
+##Transformations performed 
 
 Following transformations are performed on the raw data to arrive at the final output (tidy data set) :   
 * Join the feature vector (X_train/X_test.txt), Activity vector(Y_train/Y_test.txt) and subject_ ID vector(subject_train/subject_test.txt).
@@ -23,7 +23,7 @@ Following transformations are performed on the raw data to arrive at the final o
 ##Description of output variables 
 
 **activityname**  
-	Activity Name. Can have one of the following values :   
+	Name of the activity. Can have one of the following values :   
 	* LAYING   
 	* SITTING   
 	* STANDING   
