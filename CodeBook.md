@@ -3,7 +3,7 @@
 The output data in the file course_project_output.txt pertains to measurements from an experiment carried out on 30 volunteers performing 6 different activities(LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS). The raw data from the results of the experiment is available as a zip file at the URL https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. The zip file has two data sets for training and testing respectively. 
 
 Following data elements from the training and test data sets were utilized to produce final output:  
-* 561 feature vector indicating time and ferquency domain measurements from the experiement.
+* A 561-feature vector indicating time and ferquency domain measurements from the experiement. Each row of the vector represents data for a specific subject and activity combination.
 * Activity vector that associates an activity lable with each row of the feature vector. 
 * ID of the subject who participated in the experiment.
 * Activity label to activity name mapping
