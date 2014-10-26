@@ -2,7 +2,7 @@
 ##Overview of the output data
 The output data in the file course_project_output.txt pertains to measurements from an experiment carried out on 30 volunteers performing 6 different activities. The raw data from the results of the experiment is available as a zip file at the URL https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. The zip file has two data sets for training and testing respectively. 
 
-Following data elements from the training and test data sets wee utilized to produce final output:  
+Following data elements from the training and test data sets were utilized to produce final output:  
 * 561 feature vector indicating time and ferquency domain measurements from the experiement.
 * Activity vector that associates an activity lable with each row of the feature vector. 
 * ID of the subject who participated in the experiment.
@@ -14,14 +14,14 @@ Following transformations are performed on the raw data to arrive at the final o
 * Merge training and test datasets.
 * Extract columns representing mean and standard deviation fir each measurement.
 * Replace activity labels with respective activity names.
-* Label the data set with descriptive column names
+* change variable names to descriptive names
 * Create tidy dataset with average of each variable for each activity and each subject.
 * Write the final outout into a file.
 
 ##Description of output variables 
 
 **activityname**  
-	Activity Name. Can have following values :
+	Activity Name. Can have one of the following values :   
 	* LAYING
 	* SITTING
 	* STANDING
@@ -29,10 +29,10 @@ Following transformations are performed on the raw data to arrive at the final o
 	* WALKING_DOWNSTAIRS
 	* WALKING_UPSTAIRS
 
-subjectid
+**subjectid**   
 	Indicates the ID assigned to each person participating in the experiment.Value ranges between 1 to 30.
 
-averageTimeDomainBodyAccelarationMeanX
+**averageTimeDomainBodyAccelarationMeanX**   
 	Average value of time domain mean body accelaration along X axis by each activity and subject ID.
 
 averageTimeDomainBodyAccelarationMeanY
