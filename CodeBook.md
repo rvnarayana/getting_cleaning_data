@@ -6,266 +6,268 @@ Following data elements from the training and test data sets were utilized to pr
 * 561 feature vector indicating time and ferquency domain measurements from the experiement.
 * Activity vector that associates an activity lable with each row of the feature vector. 
 * ID of the subject who participated in the experiment.
+* Activity label to activity name mapping
+* Variable names for feature vector
 
 ##Transformations performed on raw(original) data :
 
-Following transformations are performed on the raw data to arrive at the final output (tidy dataset) :   
+Following transformations are performed on the raw data to arrive at the final output (tidy data set) :   
 * Join the feature vector (X_train/X_test.txt), Activity vector(Y_train/Y_test.txt) and subject_ ID vector(subject_train/subject_test.txt).
-* Merge training and test datasets.
+* Merge training and test data sets.
 * Extract columns representing mean and standard deviation fir each measurement.
 * Replace activity labels with respective activity names.
 * change variable names to descriptive names
-* Create tidy dataset with average of each variable for each activity and each subject.
+* Create tidy data set with average of each variable for each activity and each subject.
 * Write the final outout into a file.
 
 ##Description of output variables 
 
 **activityname**  
 	Activity Name. Can have one of the following values :   
-	* LAYING
-	* SITTING
-	* STANDING
-	* WALKING
-	* WALKING_DOWNSTAIRS
-	* WALKING_UPSTAIRS
+	* LAYING   
+	* SITTING   
+	* STANDING   
+	* WALKING   
+	* WALKING_DOWNSTAIRS   
+	* WALKING_UPSTAIRS   
 
 **subjectid**   
-	Indicates the ID assigned to each person participating in the experiment.Value ranges between 1 to 30.
+	Indicates the ID assigned to each person participating in the experiment. Value ranges between 1 and 30.
 
 **averageTimeDomainBodyAccelarationMeanX**   
 	Average value of time domain mean body accelaration along X axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationMeanY
+**averageTimeDomainBodyAccelarationMeanY**   
 	Average value of time domain mean body accelaration along Y axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationMeanZ
+**averageTimeDomainBodyAccelarationMeanZ**   
 	Average value of time domain mean body accelaration along Z axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationStdevX
+**averageTimeDomainBodyAccelarationStdevX**   
 	Average value of time domain standard deviation for body accelaration along X axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationStdevY
+**averageTimeDomainBodyAccelarationStdevY**   
 	Average value of time domain standard deviation for body accelaration along Y axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationStdevZ
+**averageTimeDomainBodyAccelarationStdevZ**   
 	Average value of time domain standard deviation for body accelaration along Z axis by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationMeanX
+**averageTimeDomainGravityAccelarationMeanX**   
 	Average value of time domain mean gravity accelaration along X axis by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationMeanY
+**averageTimeDomainGravityAccelarationMeanY**   
 	Average value of time domain mean gravity accelaration along Y axis by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationMeanZ
+**averageTimeDomainGravityAccelarationMeanZ**   
 	Average value of time domain mean gravity accelaration along Z axis by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationStdevX
+**averageTimeDomainGravityAccelarationStdevX**   
 	Average value of time domain standard deviation for gravity accelaration along X axis by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationStdevY
+**averageTimeDomainGravityAccelarationStdevY**   
 	Average value of time domain standard deviation for gravity accelaration along Y axis by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationStdevZ
+**averageTimeDomainGravityAccelarationStdevZ**   
 	Average value of time domain standard deviation for gravity accelaration along Z axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkMeanX
+**averageTimeDomainBodyAccelarationJerkMeanX**   
 	Average value of time domain mean body accelaration jerk along X axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkMeanY
+**averageTimeDomainBodyAccelarationJerkMeanY**   
 	Average value of time domain mean body accelaration jerk along Y axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkMeanZ
+**averageTimeDomainBodyAccelarationJerkMeanZ**   
 	Average value of time domain mean body accelaration jerk along Z axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkStdevX
+**averageTimeDomainBodyAccelarationJerkStdevX**   
 	Average value of time domain standard deviation for body accelaration jerk along X axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkStdevY
+**averageTimeDomainBodyAccelarationJerkStdevY**   
 	Average value of time domain standard deviation for body accelaration jerk along Y axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkStdevZ
+**averageTimeDomainBodyAccelarationJerkStdevZ**   
 	Average value of time domain standard deviation for body accelaration jerk along Z axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeMeanX
+**averageTimeDomainBodyGyroscopeMeanX**   
 	Average value of time domain mean body angular velocity along X axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeMeanY
+**averageTimeDomainBodyGyroscopeMeanY**   
 	Average value of time domain mean body angular velocity along X axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeMeanZ
+**averageTimeDomainBodyGyroscopeMeanZ**   
 	Average value of time domain mean body angular velocity along X axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeStdevX
+**averageTimeDomainBodyGyroscopeStdevX**   
 	Average value of time domain standard deviation for body angular velocity along X axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeStdevY
+**averageTimeDomainBodyGyroscopeStdevY**   
 	Average value of time domain standard deviation for body angular velocity along Y axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeStdevZ
+**averageTimeDomainBodyGyroscopeStdevZ**   
 	Average value of time domain standard deviation for body angular velocity along Z axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkMeanX
+**averageTimeDomainBodyGyroscopeJerkMeanX**   
 	Average value of time domain mean body angular velocity jerk along X axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkMeanY
+**averageTimeDomainBodyGyroscopeJerkMeanY**   
 	Average value of time domain mean body angular velocity jerk along Y axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkMeanZ
+**averageTimeDomainBodyGyroscopeJerkMeanZ**   
 	Average value of time domain mean body angular velocity jerk along Z axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkStdevX
+**averageTimeDomainBodyGyroscopeJerkStdevX**   
 	Average value of time domain standard deviation for body angular velocity jerk along X axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkStdevY
+**averageTimeDomainBodyGyroscopeJerkStdevY**   
 	Average value of time domain standard deviation for body angular velocity jerk along Y axis by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkStdevZ
+**averageTimeDomainBodyGyroscopeJerkStdevZ**   
 	Average value of time domain standard deviation for body angular velocity jerk along Z axis by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationMagnitudeMean
+**averageTimeDomainBodyAccelarationMagnitudeMean**   
 	Average value of time domain mean body accelaration magnitude by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationMagnitudeStdev
+**averageTimeDomainBodyAccelarationMagnitudeStdev**   
 	Average value of time domain standard deviation for body accelaration magnitude by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationMagnitudeMean
+**averageTimeDomainGravityAccelarationMagnitudeMean**   
 	Average value of time domain mean gravity accelaration magnitude by each activity and subject ID.
 
-averageTimeDomainGravityAccelarationMagnitudeStdev
+**averageTimeDomainGravityAccelarationMagnitudeStdev**   
 	Average value of time domain standard deviation for gravity accelaration magnitude by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkMagnitudeMean
+**averageTimeDomainBodyAccelarationJerkMagnitudeMean**   
 	Average value of time domain standard deviation for body accelaration jerk magnitude by each activity and subject ID.
 
-averageTimeDomainBodyAccelarationJerkMagnitudeStdev
+**averageTimeDomainBodyAccelarationJerkMagnitudeStdev**   
 	Average value of time domain standard deviation for body accelaration jerk magnitude by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeMagnitudeMean
+**averageTimeDomainBodyGyroscopeMagnitudeMean**   
 	Average value of time domain mean body angular velocity magnitude by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeMagnitudeStdev
+**averageTimeDomainBodyGyroscopeMagnitudeStdev**   
 	Average value of time domain standard deviation for body angular velocity magnitude by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkMagnitudeMean
+**averageTimeDomainBodyGyroscopeJerkMagnitudeMean**   
 	Average value of time domain mean body angular velocity jerk magnitude by each activity and subject ID.
 
-averageTimeDomainBodyGyroscopeJerkMagnitudeStdev
+**averageTimeDomainBodyGyroscopeJerkMagnitudeStdev**   
 	Average value of time domain standard deviation for body angular velocity jerk magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMeanX
+**averageFrequencyDomainBodyAccelarationMeanX**   
 	Average value of frequency domain mean body accelaration along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMeanY
+**averageFrequencyDomainBodyAccelarationMeanY**   
 	Average value of frequency domain mean body accelaration along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMeanZ
+**averageFrequencyDomainBodyAccelarationMeanZ**   
 	Average value of frequency domain mean body accelaration along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationStdevX
+**averageFrequencyDomainBodyAccelarationStdevX**   
 	Average value of frequency domain standard deviation for body accelaration along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationStdevY
+**averageFrequencyDomainBodyAccelarationStdevY**   
 	Average value of frequency domain standard deviation for body accelaration along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationStdevZ
+**averageFrequencyDomainBodyAccelarationStdevZ**   
 	Average value of frequency domain standard deviation for body accelaration along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMeanFrequencyX
+**averageFrequencyDomainBodyAccelarationMeanFrequencyX**   
 	Average value of frequency domain body accelaration mean frequency along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMeanFrequencyY
+**averageFrequencyDomainBodyAccelarationMeanFrequencyY**   
 	Average value of frequency domain body accelaration mean frequency along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMeanFrequencyZ
+**averageFrequencyDomainBodyAccelarationMeanFrequencyZ**   
 	Average value of frequency domain body accelaration mean frequency along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMeanX
+**averageFrequencyDomainBodyAccelarationJerkMeanX**   
 	Average value of frequency domain mean body accelaration jerk along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMeanY
+**averageFrequencyDomainBodyAccelarationJerkMeanY**   
 	Average value of frequency domain mean body accelaration jerk along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMeanZ
+**averageFrequencyDomainBodyAccelarationJerkMeanZ**   
 	Average value of frequency domain mean body accelaration jerk along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkStdevX
+**averageFrequencyDomainBodyAccelarationJerkStdevX**   
 	Average value of frequency domain standard deviation for body accelaration jerk along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkStdevY
+**averageFrequencyDomainBodyAccelarationJerkStdevY**   
 	Average value of frequency domain standard deviation for body accelaration jerk along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkStdevZ
+**averageFrequencyDomainBodyAccelarationJerkStdevZ**   
 	Average value of frequency domain standard deviation for body accelaration jerk along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMeanFrequencyX
+**averageFrequencyDomainBodyAccelarationJerkMeanFrequencyX**   
 	Average value of frequency domain body accelaration jerk mean frequency along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMeanFrequencyY
+**averageFrequencyDomainBodyAccelarationJerkMeanFrequencyY**   
 	Average value of frequency domain body accelaration jerk mean frequency along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMeanFrequencyZ
+**averageFrequencyDomainBodyAccelarationJerkMeanFrequencyZ**   
 	Average value of frequency domain body accelaration jerk mean frequency along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMeanX
+**averageFrequencyDomainBodyGyroscopeMeanX**   
 	Average value of frequency domain mean body angular velocity along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMeanY
+**averageFrequencyDomainBodyGyroscopeMeanY**   
 	Average value of frequency domain mean body angular velocity along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMeanZ
+**averageFrequencyDomainBodyGyroscopeMeanZ**   
 	Average value of frequency domain mean body angular velocity along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeStdevX
+**averageFrequencyDomainBodyGyroscopeStdevX**   
 	Average value of frequency domain standard deviation for body angular velocity along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeStdevY
+**averageFrequencyDomainBodyGyroscopeStdevY**   
 	Average value of frequency domain standard deviation for body angular velocity along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeStdevZ
+**averageFrequencyDomainBodyGyroscopeStdevZ**   
 	Average value of frequency domain standard deviation for body angular velocity along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMeanFrequencyX
+**averageFrequencyDomainBodyGyroscopeMeanFrequencyX**   
 	Average value of frequency domain body angular velocity mean frequency along X axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMeanFrequencyY
+**averageFrequencyDomainBodyGyroscopeMeanFrequencyY**   
 	Average value of frequency domain body angular velocity mean frequency along Y axis by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMeanFrequencyZ
+**averageFrequencyDomainBodyGyroscopeMeanFrequencyZ**   
 	Average value of frequency domain body angular velocity mean frequency along Z axis by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMagnitudeMean
+**averageFrequencyDomainBodyAccelarationMagnitudeMean**   
 	Average value of frequency domain mean body accelaration magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMagnitudeStdev
+**averageFrequencyDomainBodyAccelarationMagnitudeStdev**   
 	Average value of frequency domain standard deviation for body accelaration magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationMagnitudeMeanFrequency
+**averageFrequencyDomainBodyAccelarationMagnitudeMeanFrequency**   
 	Average value of frequency domain body accelaration magnitude mean frequency by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMagnitudeMean
+**averageFrequencyDomainBodyAccelarationJerkMagnitudeMean**   
 	Average value of frequency domain mean body accelaration jerk magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMagnitudeStdev
+**averageFrequencyDomainBodyAccelarationJerkMagnitudeStdev**   
 	Average value of frequency domain standard deviation for body accelaration jerk magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyAccelarationJerkMagnitudeMeanFrequency
+**averageFrequencyDomainBodyAccelarationJerkMagnitudeMeanFrequency**   
 	Average value of frequency domain body accelaration jerk magnitude mean frequency by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMagnitudeMean
+**averageFrequencyDomainBodyGyroscopeMagnitudeMean**   
 	Average value of frequency domain mean body angular velocity magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMagnitudeStdev
+**averageFrequencyDomainBodyGyroscopeMagnitudeStdev**   
 	Average value of frequency domain standard deviation for body angular velocity magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeMagnitudeMeanFrequency
+**averageFrequencyDomainBodyGyroscopeMagnitudeMeanFrequency**   
 	Average value of frequency domain body angular velocity magnitude mean frequency by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeJerkMagnitudeMean
+**averageFrequencyDomainBodyGyroscopeJerkMagnitudeMean**   
 	Average value of frequency domain mean body angular velocity jerk magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeJerkMagnitudeStdev
+**averageFrequencyDomainBodyGyroscopeJerkMagnitudeStdev**   
 	Average value of frequency domain standard deviation for body angular velocity jerk magnitude by each activity and subject ID.
 
-averageFrequencyDomainBodyGyroscopeJerkMagnitudeMeanFrequency
+**averageFrequencyDomainBodyGyroscopeJerkMagnitudeMeanFrequency**   
 	Average value of frequency domain body angular velocity jerk magnitude mean frequency by each activity and subject ID.
 
