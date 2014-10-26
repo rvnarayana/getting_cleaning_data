@@ -37,7 +37,7 @@ This step involves following for each data set (test and training) :
 * Using aggregate() function calculate mean for each measurement grouped by subject and activity   
 * Order the tidy data set by activity and subject 
 * Drop the subject_id and activity_name columns and rename Group1 & 2 columns appropriately   
-* Write the data set to the file called course_project_output.txt using write,table() function    
+* Write the data set to the file _course_project_output.txt_ using write.table() function    
  
 ##II. Instructions to run the run_analysis.R script    
  * Download the script run_analysis.R to your desktop from the Github repository
