@@ -39,7 +39,7 @@ This step involves following for each data set (test and training) :
 * Drop the subject_id and activity_name columns and rename Group1 & 2 columns appropriately   
 * Write the data set to the file called course_project_output.txt using write,table() function
  
- ##II. Instructions to run the run_analysis.R script    
+##II. Instructions to run the run_analysis.R script    
  * Download the script run_analysis.R to your desktop from the Github repository
  * Download the zip file _getdata_projectfiles_UCI HAR Dataset.zip_ containing source data provided as part of the project instructions                       
  * Unzip the above file in the same directory where the run_analysis.R script is saved   
@@ -47,7 +47,7 @@ This step involves following for each data set (test and training) :
  * Source the run_analysis.R script and execute the fucntion run_analysis() to run the script.
  * Upon completion of script execution, the output is saved to the file course_project_output.R in the same directory as the source script.    
 
- #III. Instructions to read the data from the output file     
+#III. Instructions to read the output file     
  * In R studio, make sure the current working directory is set to the directory where the outpput file exists.
  * Run the command *_tidy_data <- read.table("course_project_output.txt", header=TRUE)_*      
 * The data frame tidy_data will contain the output data.     
