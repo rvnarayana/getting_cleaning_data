@@ -4,7 +4,7 @@ The output data in the file course_project_output.txt pertains to measurements f
 
 Following data elements from the training and test data sets were utilized to produce final output:  
 * A 561-feature vector indicating time and ferquency domain measurements from the experiement. Each row of the vector represents data for a specific subject and activity combination.
-* Activity vector that associates an activity lable with each row of the feature vector. 
+* Activity vector that associates an activity label with each row of the feature vector. 
 * ID of the subject who participated in the experiment.
 * Activity label to activity name mapping
 * Variable names for feature vector
@@ -18,7 +18,7 @@ Following transformations are performed on the raw data to arrive at the final o
 * Replace activity labels with respective activity names.
 * change variable names to descriptive names
 * Create tidy data set with average of each variable for each activity and each subject.
-* Write the final outout into a file.
+* Write the final output into a file.
 
 ##Description of output variables 
 
